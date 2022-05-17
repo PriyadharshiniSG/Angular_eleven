@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <button class="btn btn-danger" (click)="onLoad()">Load</button>
+  </div>
+  <div *ngFor="let item of cargodocuments">
+    <h4>{{ item.id }}</h4>
+    <p>{{ item.value.author }}</p>
+    <p>{{ item.value.title }}</p>
+    <p>{{ item.value.characters.first }}</p>
+    <p>{{ item.value.characters.second }}</p>
+    <p>{{ item.value.characters.third }}</p>
+  </div>
+</div>
